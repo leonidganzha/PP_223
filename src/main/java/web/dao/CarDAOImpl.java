@@ -16,7 +16,7 @@ public class CarDAOImpl implements CarDAO {
         return list;
     }
 
-    public List<Car> show(int count) {
+    public List<Car> getCars(int count) {
         return (count >= 5) ? getAllCars() : getAllCars().subList(0, count);
     }
 }
